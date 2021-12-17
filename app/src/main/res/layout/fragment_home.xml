@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/swipelayout">-->
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+<!--        <SearchView-->
+<!--            android:id="@+id/restaurant_search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" >-->
+<!--            -->
+<!--        </SearchView>-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <EditText
+               android:id="@+id/text_search_text"
+               android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+               android:layout_width="match_parent"
+               android:hint="Search by city name"
+               android:textSize="22sp"
+               android:layout_margin="15dp"
+               android:layout_height="wrap_content">
+
+
+<!--           <SearchView-->
+<!--               android:id="@+id/search_bar"-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="50dp"-->
+<!--               android:background="@drawable/custom_background_yz"-->
+<!--               android:layout_margin="16dp">-->
+<!--           </SearchView>-->
+           </EditText>
+           <TextView
+               android:id="@+id/show_location_textview"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_height="wrap_content"></TextView>
+
+           <Button
+               android:id="@+id/get_location_btn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:layout_marginRight="10dp"
+               android:text="Get My Location"></Button>
+
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+   </LinearLayout>
+</LinearLayout>

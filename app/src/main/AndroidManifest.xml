@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.foodie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_df"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_df_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Foodie"
+        tools:replace="android:theme, icon">
+        <activity
+            android:name=".SendEmailActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAFsef3s1xrJwy3g7EnS_e6AtWokBhN1gs" />
+
+        <activity
+            android:name=".ForGotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".restaurantDetailActivity.RestaurantDetail"
+            android:exported="false" />
+        <activity
+            android:name=".UserPanelBottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name=".FoodieProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
